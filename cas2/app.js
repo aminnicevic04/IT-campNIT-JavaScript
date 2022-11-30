@@ -4,7 +4,7 @@ ime = "amin";
 console.log(ime)
 //sto je napisao amin a ne murga?
 
-prviBroj = "10";
+prviBroj = 10;
 
 console.log(prviBroj)
 
@@ -23,7 +23,7 @@ prviBroj +=10;
 prviBroj -=10;
 prviBroj *=10;
 prviBroj %=10;
-
+3%2=1
 console.log(20 % 7);
 
 // ovo gore mi nije jasno --->istraziti kasnije<---
