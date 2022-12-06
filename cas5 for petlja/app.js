@@ -61,7 +61,7 @@ for(i=0;i<5;i++){
 //Zadatak 9
 //napisi tablicu mnozenja od 1-10 za neki broj.
 n=Number(prompt("unesite broj"));
-for(i=1; 1<=10; i++){
+for(i=1; i<=10; i++){
     console.log(n,"*", i, "-->", n*i);
 }
 
