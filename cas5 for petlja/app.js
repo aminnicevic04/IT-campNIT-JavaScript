@@ -65,10 +65,10 @@ for(i=1; i<=10; i++){
     console.log(n,"*", i, "-->", n*i);
 }
 
-//Zadatak 10
+//Zadatak 10    
 //napravi pattern od zvezdica u obliku jelke.
 zvezdice="";
 for(i=0;i<5; i++){
     zvezdice += "*";
     console.log(zvezdice);
-}
+    }
