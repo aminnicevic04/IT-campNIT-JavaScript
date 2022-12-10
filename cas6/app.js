@@ -35,11 +35,11 @@
 //Saberi sve parne brojeve 1-100
 
 //nacin 1
-// suma=0;
-// for(i=10; 1<=100; i+=2) {
-//     suma+=i;
-// }
-// console.log(suma);
+suma=0;
+for(i=0; 1<=100; i+=2) {
+    suma+=i;
+}
+console.log(suma);
 
 // //nacin 2
 // suma=0;
@@ -49,12 +49,13 @@
 //     }
 //     suma+=i;
 // }
+// console.log(suma);
 
 //Zadatak 4 
 //Odredi faktorijel broja 5
-n=5;
-proizvod=1;
-for(i=1; i<=n; i++){
-    proizvod *= i;
-}
-console.log(proizvod);
+// n=5;
+// proizvod=1;
+// for(i=1; i<=n; i++){
+//     proizvod *= i;
+// }
+// console.log(proizvod);
