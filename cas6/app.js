@@ -4,29 +4,29 @@
 //ako je broj deljiv sa 5 ispisati Buzz
 //ako je broj deljiv i sa 3 i sa 5 ispisati FizzBuzz
 
-// for(i=1; i<=100; i++) {
-//     if(i%3===0 && i%5===0){
-//         console.log("FizzBuzz");
-//     }
-//     else if(i%3===0){
-//         console.log("Fizz");
-//     }
-//     else if(i%5===0){ 
-//     console.log("Buzz");
-//     }
-//     else{
-//         console.log(i)
-//     }
-// }
+for(i=1; i<=100; i++) {
+    if(i%3===0 && i%5===0){
+        console.log("FizzBuzz");
+    }
+    else if(i%3===0){
+        console.log("Fizz");
+    }
+    else if(i%5===0){ 
+    console.log("Buzz");
+    }
+    else{
+        console.log(i)
+    }
+}
 
 //Zadatak 2 
 //Ispisi brojeve od 1-10 bez da napises broj 5
 
-// for(i=1; i<=10; i++){
-//     if(i!=5) { 
-//     console.log(i)
-//     }
-// }
+for(i=1; i<=10; i++){
+    if(i!=5) { 
+    console.log(i)
+    }
+}
 
 //break - zavrsava for petlju i izlazi iz nje
 //continue - nastavlja petlju
@@ -53,9 +53,9 @@ console.log(suma);
 
 //Zadatak 4 
 //Odredi faktorijel broja 5
-// n=5;
-// proizvod=1;
-// for(i=1; i<=n; i++){
-//     proizvod *= i;
-// }
-// console.log(proizvod);
+n=5;
+proizvod=1;
+for(i=1; i<=n; i++){
+    proizvod *= i;
+}
+console.log(proizvod);
