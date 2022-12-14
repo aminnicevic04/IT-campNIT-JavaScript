@@ -20,3 +20,5 @@ for (i = 0; i < niz.length; i++) {
 prosek = (suma - min - max) / (niz.length - 2);
 
 console.log("prosek je ", prosek);
+console.log('najmanji broj je ' + min)
+console.log('najveci  broj je ' + max)
