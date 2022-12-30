@@ -71,7 +71,7 @@ let razmak = "";
 for (i = 1; i < 5; i++) {
   razmak = "";
   for (j = i + 1; j < 5; j++) {
-    razmak += "";
+    // razmak += "";
   }
   str += "*";
   console.log(razmak + str);
