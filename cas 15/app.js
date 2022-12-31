@@ -76,14 +76,3 @@
 //   str += "*";
 //   console.log(razmak + str);
 // }
-
-ucis = "mlogo";
-godine = 1;
-
-if ((godine = 1)) {
-  if ((ucis = "mlogo")) {
-  }
-  console.log("posto si babo ovoga");
-} else {
-  console.log("kurac si");
-}
