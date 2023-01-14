@@ -10,8 +10,8 @@
 // }
 
 //Zadatak 2
-//napisi program koji udvostrucuje svaki drugi celi broj na listi
-//pocevsi sa leve strane
+// napisi program koji udvostrucuje svaki drugi celi broj na listi
+// pocevsi sa leve strane
 
 // const niz = [1, 2, 3, 4, 5, 6];
 // noviNiz = [];
