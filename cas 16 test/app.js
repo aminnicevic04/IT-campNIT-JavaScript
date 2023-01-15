@@ -61,6 +61,8 @@ switch (niz.length) {
     console.log(`${niz[0]} , ${niz[1]} and ${niz[2]} likes this post`);
     break;
   default:
-    console.log(`${niz[0]} , ${niz[1]} and ${niz.length - 2} liked this`);
+    console.log(
+      `${niz[0]} , ${niz[1]} and ${niz.length - 2} peoples liked this`
+    );
     break;
 }
