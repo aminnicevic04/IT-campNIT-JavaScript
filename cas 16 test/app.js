@@ -8,7 +8,6 @@
 // }
 
 // // zadatak 2
-
 // let recenica =
 //   "Nakon danasnjeg testa cemo znati ko ce nastaviti sa drugim ciklusom it campa";
 
@@ -45,6 +44,7 @@
 // }
 // console.log(rezultat);
 
+// Zadatak 5
 niz = ["peter", "jacob", "alex", "max", "john", "mark", "max"];
 
 switch (niz.length) {
