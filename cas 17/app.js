@@ -59,3 +59,35 @@ console.log(exampleShift);
 //includes - proverava da li je element u nizu
 const exampleIncludes = [15, 45, 50, 100];
 console.log(exampleIncludes.includes(50));
+//moze i za stringove i za nizove
+
+//split() - string prebacuje u niz
+const exampleSplit = "danas je drugi cas drugog ciklusa";
+console.log(exampleSplit.split(" ")); //navodimo po cemu cemo da je odvojimo
+//vraca svaku rec kao odvojeni string
+//zbg toga sto kad god naidje na space on pocinje novi str
+//radi smao na stringovima
+
+//join() - niz prebacuje u string
+const exampleJoin = ["a", "b", "c", "d"];
+console.log(exampleJoin.join(" "));
+
+//replace() - da zameni neki element sa nekim drugim
+const exampleReplace = "ucimo u centru nit";
+console.log(exampleReplace.replace("i", "e"));
+//kad god naidej na b nek aga menja sa e
+//ali menja samo prvo i na koje naidje
+
+//replaceAll() - isto samo menja svaki element u koji trazimo
+const exampleReplaceAll = "ucimo u centru nit";
+console.log(exampleReplaceAll.replace("i", "e"));
+
+//map() - vraca nam ceo niz, ali izmenjen
+const exampleMap = [10, 5, 6, 2, 4, 65, 1];
+const newExampleMap = exampleMap.map(pomnozi);
+// const newExampleMap = exampleMap.map((x) => x * 2);
+
+function pomnozi(x) {
+  return x * 2;
+}
+console.log(newExampleMap);
