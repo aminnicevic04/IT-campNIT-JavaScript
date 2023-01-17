@@ -82,7 +82,7 @@ console.log(exampleReplace.replace("i", "e"));
 const exampleReplaceAll = "ucimo u centru nit";
 console.log(exampleReplaceAll.replace("i", "e"));
 
-//map() - vraca nam ceo niz, ali izmenjen
+//map() - vraca nam ceo niz, ali izmenjen funkcijom koja treba
 const exampleMap = [10, 5, 6, 2, 4, 65, 1];
 const newExampleMap = exampleMap.map(pomnozi);
 // const newExampleMap = exampleMap.map((x) => x * 2);
@@ -91,3 +91,37 @@ function pomnozi(x) {
   return x * 2;
 }
 console.log(newExampleMap);
+
+//podeli sa pet
+const zadatak = [5, 10, 15, 20, 25, 30];
+const noviZadatak = zadatak.map(podeli);
+
+function podeli(x) {
+  return x / 5;
+}
+console.log(noviZadatak);
+
+//sort
+const months = [1, 5, 2, 4];
+months.sort();
+console.log(months);
+//ako stavimo stringove sortira ih po abecedi
+
+//reverse() - cita ga od kraja ka pocetku
+const array1 = ["one", "two", "three"];
+console.log("array1:", array1);
+
+//charAt() - da prikaze karakter na nekoj poziciji
+let exampleCharAt = "nesto ne znam sta je";
+console.log(exampleCharAt.charAt(2));
+
+//filter()
+let exampleFilter = [15, 5, 3, 5, 6, 7, 33];
+// console.log(exampleFilter.filter((x) => x % 2 === 0));
+// console.log(exampleFilter.filter(podeli));
+//uzeo sam funkciju odozgo
+
+//indexOf() - vraca nam index trazenog elementa
+console.log(exampleFilter.indexOf(7));
+
+//nadji najduzu rec u stringu domaci
