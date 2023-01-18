@@ -80,16 +80,15 @@
 // console.log(sumag);
 
 // zadatak
-//nadji prefiks sledecih reci
+//nadji korene ovih reci
+// let reci = ["flower", "flow", "flight"];
+// let prefiks = reci[0];
 
-let reci = ["flghasan", "flgdzenis", "flg", "dzeis"];
-let prefiks = reci[0];
-
-for (i = 1; i < reci.length; i++) {
-  let j = 0;
-  while (j < prefiks.length && reci[i][j] == prefiks[j]) {
-    j++;
-  }
-  prefiks = prefiks.slice(0, j);
-}
-console.log(prefiks);
+// for (i = 1; i < reci.length; i++) {
+//   let j = 0;
+//   while (j < prefiks.length && reci[i][j] == prefiks[j]) {
+//     j++;
+//   }
+//   prefiks = prefiks.slice(0, j);
+// }
+// console.log(prefiks);
