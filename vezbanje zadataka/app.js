@@ -29,7 +29,7 @@
 // if (isNaN (x) || isNaN(y)){
 //     console.log('niste unesi broj')
 // } else if (y>0){
-//     x++;    
+//     x++;
 //     console.log(x)
 // }
 // else{
@@ -55,28 +55,41 @@
 // 6
 // suma parnih brojeva od k do n
 
-let broj1g = +prompt("Unesite prvi broj");
-let broj2g = +prompt("Unesite drugi broj");
-let sumag = 0;
+// let broj1g = +prompt("Unesite prvi broj");
+// let broj2g = +prompt("Unesite drugi broj");
+// let sumag = 0;
 
-if (isNaN(broj1g) || isNaN(broj2g)) {
-  console.log("Niste uneli broj");
-} else if (broj1g < broj2g) {
-  for (broj1g; broj1g <= broj2g; broj1g++) {
-    if (broj1g % 2 === 0) {
-      sumag += broj1g;
-    }
+// if (isNaN(broj1g) || isNaN(broj2g)) {
+//   console.log("Niste uneli broj");
+// } else if (broj1g < broj2g) {
+//   for (broj1g; broj1g <= broj2g; broj1g++) {
+//     if (broj1g % 2 === 0) {
+//       sumag += broj1g;
+//     }
+//   }
+// } else if (broj1g > broj2g) {
+//   for (broj2g; broj2g <= broj1g; broj2g++) {
+//     if (broj2g % 2 === 0) {
+//       sumag += broj2g;
+//     }
+//   }
+// } else if (broj1g == broj2g) {
+//   console.log("Uneli ste iste brojeve");
+// }
+
+// console.log(sumag);
+
+// zadatak
+//nadji prefiks sledecih reci
+
+let reci = ["flghasan", "flgdzenis", "flg", "dzeis"];
+let prefiks = reci[0];
+
+for (i = 1; i < reci.length; i++) {
+  let j = 0;
+  while (j < prefiks.length && reci[i][j] == prefiks[j]) {
+    j++;
   }
-} else if (broj1g > broj2g) {
-  for (broj2g; broj2g <= broj1g; broj2g++) {
-    if (broj2g % 2 === 0) {
-      sumag += broj2g;
-    }
-  }
-} else if (broj1g == broj2g) {
-  console.log("Uneli ste iste brojeve");
+  prefiks = prefiks.slice(0, j);
 }
-
-console.log(sumag);
-
-
+console.log(prefiks);
