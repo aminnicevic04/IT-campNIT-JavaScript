@@ -66,4 +66,4 @@ function uniqueInOrder(arr) {
 
 const arrn = "aaaabbbbcccdddagggeee";
 
-// console.log(uniqueInOrder(arrn));
+console.log(uniqueInOrder(arrn));
