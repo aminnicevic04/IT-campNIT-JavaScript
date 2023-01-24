@@ -77,4 +77,4 @@ const nalazenje = function (ime) {
 console.log(nalazenje(imena));
 
 const noviNiz = new Set(imena); // set ne dozvoljava duplikat
-// console.log(noviNiz); // i vraca nam niz bez duplikata
+console.log(noviNiz); // i vraca nam niz bez duplikata
