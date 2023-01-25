@@ -16,7 +16,6 @@ function lengthObj(obj) {
 console.log(lengthObj(student));
 
 //naci sumu svih pozitivnih brojeva u nizu
-
 const arr = [1, 5, -5, 12, 5, -2, -4];
 
 function calculating(arr) {
@@ -25,3 +24,50 @@ function calculating(arr) {
   return `Zbir pozitivnih brojeva u nizu je ${mnozenje1}`;
 }
 console.log(calculating(arr));
+
+//uneti string kao puno ime i prezime prebaci u string,
+//izdvoj inicijale, i vrati ponovo u string i ispisi u koznoli.
+var string = "Amin Nicevic";
+function inic(str) {
+  return str
+    .split(" ")
+    .map((el) => el[0])
+    .join(" ");
+}
+console.log(inic(string));
+
+//svako pocetno slovo niza napisati velikim slovom
+// let nizImena = ["lejla", "Ahmed", "AMIN", "Amin"];
+// function capitalizeName(arr) {
+//   return str
+//     .map((el) => el[0].toUpperCase())
+//     .slice(1, el.length)
+//     .toLowerCase();
+// }
+// console.log(capitalizeName(nizImena));
+
+var bibl = [
+  {
+    author: "Bill Gates",
+    title: "The road ahed",
+    readingStatus: true,
+  },
+  {
+    author: "Steve Jobs",
+    title: "Walter Isacson",
+    readingStatus: true,
+  },
+  {
+    author: "Suzzane Collins",
+    title: "Mockingjay",
+    readingStatus: false,
+  },
+];
+
+for (i = 0; i < bibl.length; i++) {
+  if (bibl[i].readingStatus) {
+    console.log(`vec procitano ${bibl[i].title} od autora ${bibl[i].author}`);
+  } else {
+    console.log(`morate citati ${bibl[i].title} od autora ${bibl[i].author}`);
+  }
+}
