@@ -85,5 +85,4 @@ for (let element of niz) {
 }
 console.log(element); //ispisuje se vrednost
 
-console.log(niz.forEach((el) => el * 2));
-//uzima svaki elemnt i radi ono sto mu zadamo u ovom slucaju mnozi ga sa dva
+//jos for each da napisem
