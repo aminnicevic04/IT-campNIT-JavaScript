@@ -8,3 +8,63 @@ console.log(changing(imeIprezime));
 //split prebacujemo str u arr, reverse menjamo mesta, join preabcujemo opet u str
 
 //Zadatak 2
+//map,split,join
+
+const input = "Every developer likes to mix kubernetes and javascript";
+
+const zadatak = function (arr) {
+  return arr
+    .split(" ")
+    .map((e) => (e.length > 4 ? e[0] + (e.length - 2) + e[e.length - 1] : e))
+    .join(" ");
+};
+console.log(zadatak(input));
+
+//Zadatak 3
+// izdvoj namjamnje godine i najvece godine
+// const input1 = [
+//   {
+//     name: john,
+//     age: 13,
+//   },
+//   {
+//     name: Amin,
+//     age: 18,
+//   },
+//   {
+//     name: Omer,
+//     age: 65,
+//   },
+//   {
+//     name: Amar,
+//     age: 20,
+//   },
+// ];
+
+// let najvece = input[0].age;
+// let najmanje = input[0].age;
+
+// for (i = 0; i < input.length; i++) {
+//   if (input[i].age < najmanje) {
+//     najmanje = input[i].age;
+//   }
+
+//   if (input[i].age > najvece) {
+//     najvece = input[i].age;
+//   }
+// }
+// console.log(najmanje, najvece);
+
+// Zadatak 4
+//napisati funkciju koja prihavta niz od 10 brojeva (izmedju 0-9)
+//potrebno je da vrati niz tih brojeva u obliku telefonskog broja
+
+function createPhoneNumber(niz) {
+  let format = "(xxx) xxx-xxxx";
+
+  for (let i = 0; i < niz.length; i++) {
+    format = format.replace("x", niz[i]);
+  }
+  return format;
+}
+console.log(createPhoneNumber([0, 6, 3, 1, 6, 0, 1, 0, 0, 2]));
