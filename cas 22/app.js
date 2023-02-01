@@ -40,17 +40,17 @@ console.log(zadatak(input));
 //     age: 20,
 //   },
 // ];
+// console.log(input1[0].age);
+// let najvece = input1[0].age;
+// let najmanje = input1[0].age;
 
-// let najvece = input[0].age;
-// let najmanje = input[0].age;
-
-// for (i = 0; i < input.length; i++) {
-//   if (input[i].age < najmanje) {
-//     najmanje = input[i].age;
+// for (i = 0; i < input1.length; i++) {
+//   if (input1[i].age < najmanje) {
+//     najmanje = input1[i].age;
 //   }
 
-//   if (input[i].age > najvece) {
-//     najvece = input[i].age;
+//   if (input1[i].age > najvece) {
+//     najvece = input1[i].age;
 //   }
 // }
 // console.log(najmanje, najvece);
