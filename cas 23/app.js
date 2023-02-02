@@ -47,7 +47,7 @@ Java Script ima tri tipa
 
 // Zadatak 5
 
-let niz2 = ["hook bill", "african", "pilgrim", "crested"];
+let niz2 = ["hook bill", "african", "pilgrim", "crested", "amin", "skola"];
 const zadatakNeki = function (arr) {
   let find = "african";
   return arr.filter((el) => el !== find);
@@ -57,7 +57,8 @@ console.log(zadatakNeki(niz2));
 //za domaci odradi preko filtera i slice
 
 const zadatakNeki1 = function (arr) {
-  let niz1 = "african";
+  let niz1 = ["african", "hook bill", "piligram", "crested"];
   return arr.indexOf(niz1).slice(0, niz1) + niz2.slice(niz1, niz.length);
 };
 console.log(zadatakNeki(niz2));
+t;
