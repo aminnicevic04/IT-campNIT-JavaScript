@@ -61,4 +61,3 @@ const zadatakNeki1 = function (arr) {
   return arr.indexOf(niz1).slice(0, niz1) + niz2.slice(niz1, niz.length);
 };
 console.log(zadatakNeki(niz2));
-t;
