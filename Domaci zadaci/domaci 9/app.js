@@ -28,12 +28,12 @@ const highAvgScore = avgScores.filter((student) => student.avgScore > 90);
 console.log(highAvgScore);
 
 //2
-arr = [1, 1, 1, 1, 1];
-const bla = function (arr) {
-  return arr
-    .map((x, a) => x + a)
-    .filter((x) => x > 2)
-    .join()
-    .split(" ");
-};
-console.log(bla(arr));
+// arr = [1, 1, 1, 1, 1];
+// const bla = function (arr) {
+//   return arr
+//     .map((x, a) => x + a)
+//     .filter((x) => x > 2)
+//     .join()
+//     .split(" ");
+// };
+// console.log(bla(arr));
