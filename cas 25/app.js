@@ -91,4 +91,4 @@ let person = {
 };
 
 console.log(person);
-console.log(person.setNickName());
+// console.log(person.setNickName());
