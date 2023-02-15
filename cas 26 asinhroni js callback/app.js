@@ -28,6 +28,10 @@
 //   return n + 2;
 // }
 
+// console.log(pomnozi(saberi));
+// const rezultat = pomnozi(kvadrat);
+// console.log(rezultat);
+
 //Zadatak 1
 
 function saberiDvaBroja(a, b) {
