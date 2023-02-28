@@ -92,3 +92,5 @@
 //   prefiks = prefiks.slice(0, j);
 // }
 // console.log(prefiks);
+
+// callbacks
