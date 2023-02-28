@@ -111,3 +111,4 @@ const cities = {
   Paris: "PARIS",
 };
 console.log(objectFilter(cities, (city) => city.toUpperCase()));
+//
