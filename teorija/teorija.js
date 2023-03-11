@@ -3,6 +3,8 @@
 // //   .then((data) => console.log(data))
 // //   .catch((error) => console.error(error));
 
+const { watch } = require("fs");
+
 // // fetch("https://api.example.com/data", {
 // //   method: "POST",
 // //   body: JSON.stringify(data),
@@ -196,19 +198,81 @@
 //   console.log(data);
 // })();
 
-let p = new Promise((resolve, reject) => {
-  let a = 1 + 1;
-  if (a == 2) {
-    resolve("succes");
-  } else {
-    reject("failed");
-  }
-});
+// let p = new Promise((resolve, reject) => {
+//   let a = 1 + 1;
+//   if (a == 2) {
+//     resolve("succes");
+//   } else {
+//     reject("failed");
+//   }
+// });
 
-p.then((message) => {
-  console.log("this is in the then " + message);
-}).catch((message) => {
-  console.log("this is in the catch" + message);
-});
+// p.then((message) => {
+//   console.log("this is in the then " + message);
+// }).catch((message) => {
+//   console.log("this is in the catch" + message);
+// });
 // then je kada uspe
 // catch kada ne uspe
+
+// PRIMER 2
+
+// const userLeft = false;
+// const userWatchingCatMeme = true;
+
+// function watchTutorialPromise() {
+//   return new Promise((resolve, reject) => {
+//     if (userLeft) {
+//       reject({
+//         name: "User Left",
+//         message: ":(",
+//       });
+//     } else if (userWatchingCatMeme) {
+//       reject({
+//         name: "User Watching Cat Meme",
+//         message: "WebdevSimplified < Cat",
+//       });
+//     } else {
+//       resolve("thumbs up and subscribe");
+//     }
+//   });
+// }
+
+// watchTutorialPromise()
+//   .then((message) => {
+//     console.log("succes:" + message);
+//   })
+//   .catch((error) => {
+//     console.log(error.name + "" + error.message);
+//   });
+
+// PRIMER 3
+
+// const recordVideoOne = new Promise((resolve, reject) => {
+//   resolve("video 1 recorded");
+// });
+
+// const recordVideoTwo = new Promise((resolve, reject) => {
+//   resolve("video 2 recorded");
+// });
+
+// const recordVideoThree = new Promise((resolve, reject) => {
+//   resolve("video 3 recorded");
+// });
+
+// Promise.all pokrece sve promise i napravili smo arrow funkciju koja nam
+// ispisuje poruke svih promisa kada se izvrse
+Promise.all([recordVideoOne, recordVideoTwo, recordVideoThree]).then(
+  (messages) => {
+    console.log(messages);
+  }
+);
+
+// Promise.race nam sipisuje samo onaj promis koji se prvi izvrsi
+Promise.race([recordVideoOne, recordVideoTwo, recordVideoThree]).then(
+  (message) => {
+    console.log(message);
+  }
+);
+
+// async await
