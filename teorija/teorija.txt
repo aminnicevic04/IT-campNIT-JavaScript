@@ -1,0 +1,83 @@
+-Asinhroni JavaScript (eng. "Asynchronous JavaScript") je način izvršavanja JavaScript koda koji ne blokira 
+(ne zaustavlja) izvršavanje ostalih dijelova web stranice dok se čeka da se nešto dogodi.
+
+-Callback (eng. "callback") u JavaScriptu je funkcija koja se prosljeđuje kao argument drugoj funkciji 
+i koja se poziva nakon završetka izvršavanja te druge funkcije. 
+U suštini, callback je način da se drugoj funkciji kaže što da uradi nakon što završi neki zadatak.
+
+-Closure (eng. "closure") u JavaScriptu je koncept koji omogućuje funkciji da pristupa varijablama 
+izvan svog vlastitog opsega (eng. "scope"). U suštini, to znači da funkcija "pamti" stanje 
+u kojem su se nalazile varijable u trenutku njenog stvaranja, čak i nakon što je ta funkcija izvršena.
+
+- IIFE (Immediately Invoked Function Expression)
+
+-Promise (eng. "promise") u JavaScriptu je objekt koji predstavlja asinhroni proces koji još nije završen, 
+ali će se završiti u budućnosti. Promise se koristi za rukovanje asinkronim operacijama i izvršavanje koda 
+kada se operacija završi, bez blokiranja ostalog koda.
+
+-Imaju tri stanja : Nedefinisan, Prihvacen i Odbijen
+
+-setTimeout() je funkcija u JavaScriptu koja se koristi za odgađanje izvršavanja određenog koda nakon zadanog 
+vremenskog intervala. Ova funkcija je jedan od načina za rukovanje asinkronim operacijama u JavaScriptu.
+
+Sintaksa funkcije setTimeout() je sljedeća:
+
+setTimeout(callbackFunction, delayTime);
+
+gdje je:
+
+callbackFunction: funkcija koja se treba izvršiti nakon zadanog vremenskog intervala
+delayTime: vremenski interval u milisekundama nakon kojeg se treba izvršiti funkcija
+Kada se funkcija setTimeout() pozove, JavaScript odmah prelazi na izvršavanje drugog koda, 
+a zatim nakon zadanog vremenskog intervala poziva funkciju callbackFunction koju je korisnik definirao.
+
+setTimeout() se često koristi u raznim situacijama u JavaScriptu, na primjer:
+
+Za odgađanje izvršavanja animacije na web stranici
+Za prikazivanje poruka upozorenja korisniku nakon nekog vremenskog intervala
+Za provjeru statusa preuzimanja datoteke nakon nekog vremena, itd.
+
+-fetch() je funkcija u JavaScriptu koja se koristi za dohvaćanje resursa s mreže, kao što su 
+HTML stranice, slike, JSON podaci, itd. 
+Funkcija fetch() omogućuje izvršavanje HTTP zahtjeva za dohvaćanje resursa 
+i vraća Promise objekt koji sadrži odgovor na zahtjev.
+
+Funkcija fetch() se koristi u različitim situacijama u JavaScriptu, na primjer:
+
+- Dohvaćanje podataka s API-ja
+- Dohvaćanje slika i drugih multimedijalnih resursa
+- Dohvaćanje HTML stranica za prikaz na web stranici
+
+---- Mozemo pristupiti podacima preko json() metode, u text formatu i binarnom formatu... ----
+.json()
+.text()
+.arrayBuffer() 
+
+error handling (rukovodjenje greskama)
+Ako dođe do greške prilikom dohvaćanja podataka, možete rukovati greškom pomoću metode .catch() 
+koja se poziva nakon poziva metoda .then(). Primjer:
+
+fetch('https://api.example.com/data')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+  Postavljanje opcija za zahtjev:
+Kada pozivate funkciju fetch(), možete postaviti različite opcije za zahtjev, 
+kao što su metod zahtjeva (GET, POST, itd.), tijelo zahtjeva i zaglavlja. Primjer:
+
+fetch('https://api.example.com/data', {
+  method: 'POST',
+  body: JSON.stringify(data),
+  headers: {
+    'Content-Type': 'application/json'
+  }
+})
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error(error));
+
+
+  JSON.stringify - pretvaranje objekta u json pa u string, tj. uzima objekat i pretvara ga u string
+
+  JSON.parse - pretvara json string u objekat, ne moze da pretvori obican str u obj
