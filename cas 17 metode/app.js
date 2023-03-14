@@ -82,7 +82,7 @@ console.log(exampleReplace.replace("i", "e"));
 const exampleReplaceAll = "ucimo u centru nit";
 console.log(exampleReplaceAll.replace("i", "e"));
 
-//map() - vraca nam ceo niz, ali izmenjen funkcijom koja treba
+//ma p() - vraca nam ceo niz, ali izmenjen funkcijom koja treba
 const exampleMap = [10, 5, 6, 2, 4, 65, 1];
 const newExampleMap = exampleMap.map(pomnozi);
 // const newExampleMap = exampleMap.map((x) => x * 2);
