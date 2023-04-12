@@ -43,6 +43,7 @@ function newCard(name, main, pic) {
   slika.className = "slika";
   slika.src = `http://openweathermap.org/img/w/${pic.weather[0].icon}.png`;
 
+
   card.append(slika);
   card.append(ime);
   card.append(temp);
